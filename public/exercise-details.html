@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="sidebar">
+    <h2>🏋️ Gym</h2>
+    <a href="member.html">Dashboard</a>
+    <a href="exercises.html">Exercises</a>
+    <a href="track.html">Track</a>
+    <a href="diet.html">Diet</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <div class="main">
+
+    <h1 id="title"></h1>
+
+    <div class="card">
+      <h3>How to do</h3>
+      <p id="how"></p>
+    </div>
+
+    <div class="card">
+      <h3>Benefits</h3>
+      <p id="why"></p>
+    </div>
+
+    <button onclick="goTrack()">Start Exercise</button>
+
+  </div>
+
+</div>
+
+<script>
+const ex = localStorage.getItem("exercise");
+document.getElementById("title").innerText = ex;
+
+const details = {
+  "Pushups": ["Push body up/down", "Build chest"],
+  "Squats": ["Bend knees", "Leg strength"],
+  "Deadlift": ["Lift weight", "Full body"],
+  "Pull Ups": ["Pull body", "Upper strength"],
+  "Biceps Curl": ["Lift dumbbell", "Arms"],
+  "Triceps Dip": ["Dip body", "Triceps"],
+  "Shoulder Press": ["Push up", "Shoulders"],
+  "Bench Press": ["Press bar", "Chest"],
+  "Plank": ["Hold position", "Core"],
+  "Leg Press": ["Push platform", "Legs"]
+};
+
+document.getElementById("how").innerText = details[ex][0];
+document.getElementById("why").innerText = details[ex][1];
+
+function goTrack(){
+  window.location = "track.html";
+}
+</script>
+
+</body>
+</html>

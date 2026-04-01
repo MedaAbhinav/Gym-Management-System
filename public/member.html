@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Member Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>🏋️ Gym</h2>
+
+    <a href="member.html">Dashboard</a>
+    <a href="exercises.html">Exercises</a>
+    <a href="track.html">Track</a>
+    <a href="diet.html">Diet</a>
+    <a href="about.html">About</a>
+
+    <!-- 🔥 Logout Button -->
+    <button onclick="logout()" style="margin-top:20px;">Logout</button>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- Welcome -->
+    <h1 id="welcome">Welcome 👋</h1>
+
+    <!-- 🔥 Stats Cards -->
+    <div class="cards">
+
+      <div class="card">
+        🔥 Calories Burned
+        <h2 id="totalCal">0</h2>
+      </div>
+
+      <div class="card">
+        💪 Total Workouts
+        <h2 id="totalSets">0</h2>
+      </div>
+
+    </div>
+
+    <!-- Motivation -->
+    <div style="margin-top:30px;">
+      <div class="card">
+        🚀 Today's Motivation  
+        <p>"Push yourself, because no one else will do it for you."</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

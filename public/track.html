@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Track Workout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>🏋️ Gym</h2>
+    <a href="member.html">Dashboard</a>
+    <a href="exercises.html">Exercises</a>
+    <a href="track.html">Track</a>
+    <a href="diet.html">Diet</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <h1>📊 Track Workout</h1>
+
+    <!-- 🔥 Card Container -->
+    <div class="card">
+
+      <!-- Exercise 1 -->
+      <h3>Exercise 1</h3>
+      <select id="ex1">
+        <option>Pushups</option>
+        <option>Squats</option>
+        <option>Deadlift</option>
+        <option>Pull Ups</option>
+        <option>Bench Press</option>
+      </select>
+
+      <input type="number" id="set1" placeholder="Enter sets">
+
+      <!-- Exercise 2 -->
+      <h3>Exercise 2</h3>
+      <select id="ex2">
+        <option>Plank</option>
+        <option>Biceps Curl</option>
+        <option>Triceps Dip</option>
+        <option>Leg Press</option>
+        <option>Shoulder Press</option>
+      </select>
+
+      <input type="number" id="set2" placeholder="Enter sets">
+
+      <!-- Button -->
+      <button onclick="saveDay()">💾 Save Workout</button>
+
+      <!-- Result -->
+      <h2>🔥 Total Calories: <span id="cal">0</span></h2>
+
+    </div>
+
+
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

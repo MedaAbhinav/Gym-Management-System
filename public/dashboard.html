@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar (Clean Minimal) -->
+  <div class="sidebar">
+    <h2>🏋️ Gym</h2>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <h1>📊 Admin Dashboard</h1>
+
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card">
+        👥 Total Members
+        <h2 id="total">0</h2>
+      </div>
+    </div>
+
+    <!-- Add Member -->
+    <div class="card" style="margin-top:20px;">
+      <h2>➕ Add Member</h2>
+
+      <input id="name" placeholder="Enter Name">
+      <input id="age" placeholder="Enter Age" type="number">
+
+      <select id="plan">
+        <option>Monthly</option>
+        <option>Yearly</option>
+      </select>
+
+      <button onclick="add()">Add Member</button>
+    </div>
+
+    <!-- Members List -->
+    <div class="card" style="margin-top:20px;">
+      <h2>📋 Members</h2>
+
+      <table style="width:100%; margin-top:10px;">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Plan</th>
+          </tr>
+        </thead>
+
+        <tbody id="list"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
