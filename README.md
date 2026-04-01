@@ -1,8 +1,5 @@
 # 🏋️ Gym Management System
 
-A full-stack web application to manage gym members, workouts, and diet plans.
-🏋️ Gym Management System
-
 A full-stack web application to efficiently manage gym operations, including member management, workout tracking, calorie calculation, and diet planning.
 
 This project uses a modern tech stack with a clean UI and real-time data handling using MongoDB.
