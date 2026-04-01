@@ -50,31 +50,31 @@ This project uses a modern tech stack with a clean UI and real-time data handlin
 
 🔐 Login Page
 
-"Login" (login.png)
+![Login](login.png)
 
 📊 Admin Dashboard
 
-"Admin" (admin.png)
+![Admin](admin.png)
 
 👤 Member Dashboard
 
-"Member" (member.png)
+![Member](member.png)
 
 💪 Exercises Page
 
-"Exercises" (exercises.png)
+![Exercises](exercises.png)
 
 📝 Track Workout
 
-"Track" (track.png)
+![Track](track.png)
 
 🍽️ Diet Plan
 
-"Diet" (diet.png)
+![Diet](diet.png)
 
 ℹ️ About Page
 
-"About" (about.png)
+![About](about.png)
 
 ---
 
